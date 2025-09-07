@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		05EE00042E6D1F5B00E00E6F /* OpenAIRealtime in Frameworks */ = {isa = PBXBuildFile; productRef = 05EE00032E6D1F5B00E00E6F /* OpenAIRealtime */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		05EEFE9B2E6A8FAC00E00E6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05EE00042E6D1F5B00E00E6F /* OpenAIRealtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Stacy;
 			packageProductDependencies = (
+				05EE00032E6D1F5B00E00E6F /* OpenAIRealtime */,
 			);
 			productName = Stacy;
 			productReference = 05EEFE8D2E6A8FAB00E00E6F /* Stacy.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 05EEFE842E6A8FAB00E00E6F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				05EE00022E6D1F5B00E00E6F /* XCRemoteSwiftPackageReference "swift-realtime-openai" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 05EEFE8E2E6A8FAB00E00E6F /* Products */;
 			projectDirPath = "";
@@ -556,6 +565,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05EE00022E6D1F5B00E00E6F /* XCRemoteSwiftPackageReference "swift-realtime-openai" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/m1guelpf/swift-realtime-openai.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05EE00032E6D1F5B00E00E6F /* OpenAIRealtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05EE00022E6D1F5B00E00E6F /* XCRemoteSwiftPackageReference "swift-realtime-openai" */;
+			productName = OpenAIRealtime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05EEFE852E6A8FAB00E00E6F /* Project object */;
 }
